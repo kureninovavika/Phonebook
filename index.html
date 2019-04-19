@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>Phonebook</title>
+</head>
+<body>
+<div class="phonebook">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="phonebook__form__section">
+                    <h3>Add new contact</h3>
+                    <form action="" onsubmit="return false;" id="add-user-form">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" id="first-name" class="form-control" placeholder="First Name" maxlength="30">
+                        </div>
+                        <div class="form-group">
+                            <label>Second Name</label>
+                            <input type="text" id="second-name" class="form-control" placeholder="Second Name" maxlength="30">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Phone">
+                        </div>
+                        <button class="btn btn-primary pull-right" id="add-contact">Add contact</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="phonebook__form__section">
+                    <h3>List of users</h3>
+                    <div id="test"></div>
+                    <table class="table table-sm table-hover" id="users-list">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Second Name</th>
+                            <th scope="col">Phone</th>
+                        </tr>
+                        </thead>
+                        <tbody id="tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="phonebook__form__section">
+                    <h3>Search</h3>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="search-input">
+                    </div>
+                    <div id="search-result"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+
+<script src="src/js/initialize.js"></script>
+<script src="src/js/phonebook.js"></script>
+<script src="src/js/filter.js"></script>
+<script src="src/js/app.js"></script>
+
+</html>
